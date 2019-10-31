@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.bruno.quizapp.MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/quizText"
+                android:text="Name:" />
+            <EditText
+                style="@style/quizText"
+                android:layout_weight="1"
+                android:inputType="textCapSentences" />
+            <TextView
+                style="@style/quizText"
+                android:text="Score:" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:text="100"
+                android:textColor="#F44336"
+                android:textSize="20sp" />
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Basic History Quiz"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="8dp"
+            android:textSize="28sp"
+            android:textColor="#000000"
+            android:gravity="center"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="12sp"
+            android:layout_marginBottom="16dp"
+            android:text="Please make sure all spelling is correct."/>
+        <TextView
+            android:text="1: Who was the first President of the United States of America."
+            style="@style/quizText" />
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:inputType="textCapWords|textAutoCorrect"
+            android:textSize="10sp" />
+
+        <TextView
+            style="@style/quizText"
+            android:text="2: What are the names of the Branches of the U.S. Government. Check all that apply." />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Senate"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Judicial"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Legislative"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Executive"/>
+        <TextView
+            android:text="3: How many colonies was the United States originally?"
+            style="@style/quizText" />
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:inputType="number"/>
+
+        <TextView
+            style="@style/quizText"
+            android:text="4: How many Senators are in the US Congress?" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="10sp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:inputType="number"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            style="@style/quizText"
+            android:text="5: There are two major Political Parties in the United States Government. The Democrats is one of the parties, who is the other party?" />
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tea Party"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Costume Party"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="House Party"/>
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Republican Party"/>
+        </RadioGroup>
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <Button
+                android:layout_centerInParent="true"
+                style="@style/quizText"
+                android:text="Submit"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
